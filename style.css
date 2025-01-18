@@ -135,3 +135,9 @@ body {
 .test_btn img{
     left: 0;
 }
+.test_btn:hover{
+    background-color: rgb(87, 141, 251);
+}
+.test_btn:active{
+    background-color: rgb(170, 201, 255);
+}
