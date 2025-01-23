@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>testing field</title>
 </head>
 <body>
@@ -10,8 +11,10 @@
         <div class="head_container">
             <!--логотип и надпись TODO: изменить курсор при наведении-->
             <div class="logo_container">
-                <img src="pic/Union.svg" id="logo_image" alt="logo_image" onclick="alert('hello')">
+                <div class="clickable_logo_container" onclick="alert('hello')">
+                <img src="pic/Union.svg" id="logo_image" alt="logo_image">
                 <a id="logo_text">appear</a>
+                </div>
                 <a id="stick"></a>
                 <a id="future">Будущее начинается<br> с твоего выбора</a>
             </div>
@@ -28,18 +31,20 @@
                     <button>События</button>
                 </nav>
             </div>
+<!--            Кнопка входа. TODO: Сделать переход в окно входа-->
             <button id="login_button">Войти <span id="rectangle"><img src="pic/login_arrow.svg" alt="logo"></span></button> <!--разобраться с размером и положением img-->
         </div>
+    </header>
+    <main>
         <div class="future_container">
-            <h1 style="display:inline">Будущее начинается<br>с твоего выбора<span style="color: #FF770D">.</span></h1>
+            <h1>Будущее начинается<br>с твоего выбора<span style="color: #FF770D">.</span></h1>
         </div>
         <div class="future_container_minor">
             <a>Узнайте за 10 минут, какие профессии<br> могут вам понравиться и попробуйте<br> свои силы в специальности</a>
             <div class="test_container">
-                <button class="test_btn">Пройти тест <img src="./pic/test_arrow.svg" alt="arrow"></button>
-
+                <button class="test_btn" onclick="test_button()">Пройти тест <img src="pic/test_arrow.svg" alt="arrow"></button>
             </div>
         </div>
-    </header>
+    </main>
 </body>
 </html>
